@@ -74,7 +74,7 @@ jobs:
           for registry in ${registries[@]}; do
             for tag in ${tags[@]}; do
               echo "Pushing artifact to ${registry}:${tag}"
-              if oras push ${registry}:${tag} \
+              if oras push -verbose ${registry}:${tag} \
               --artifact-type application/vnd.cncf.openpolicyagent.config.v1+json \
               bundle.tar.gz:application/vnd.cncf.openpolicyagent.layer.v1.tar+gzip; then
                 echo "Successfully pushed artifact to ${registry}:${tag}"
