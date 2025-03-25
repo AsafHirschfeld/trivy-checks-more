@@ -9,8 +9,8 @@ on:
         description: "Run nightly release"
 
 env:
-  GH_USER: aqua-bot
-  AQUA_DOCKERHUB_REPO: aquasec
+  GH_USER: AsafHirschfeld
+  AQUA_DOCKERHUB_REPO: AsafHirschfeld
 
 jobs:
   integration-tests:
