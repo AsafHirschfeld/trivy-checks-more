@@ -5,3 +5,4 @@ opa
 .vscode
 
 .DS_Store
+/bundle
